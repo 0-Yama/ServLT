@@ -1,0 +1,83 @@
+[01:45:10] [Server thread/INFO]: Le serveur va redémarrer dans 15 Minutes![m
+[01:50:10] [Server thread/INFO]: Le serveur va redémarrer dans 10 Minutes![m
+[01:55:10] [Server thread/INFO]: Le serveur va redémarrer dans 5 Minutes![m
+[01:59:10] [Server thread/INFO]: Le serveur va redémarrer dans 1 Minutes![m
+[02:00:05] [Server thread/INFO]: Server is restarting in 5 Seconds![m
+[02:00:06] [Server thread/INFO]: Server is restarting in 4 Seconds![m
+[02:00:07] [Server thread/INFO]: Server is restarting in 3 Seconds![m
+[02:00:08] [Server thread/INFO]: Server is restarting in 2 Seconds![m
+[02:00:09] [Server thread/INFO]: Server is restarting in 1 Seconds![m
+[02:00:10] [Server thread/INFO]: [0;31;1mServer Restarting![m
+[02:00:10] [Server thread/INFO]: Startup script 'start.sh' does not exist! Stopping server.
+[02:00:10] [Server thread/INFO]: Stopping server
+[02:00:10] [Server thread/INFO]: [EssentialsSpawn] Disabling EssentialsSpawn v2.17.2.0
+[02:00:10] [Server thread/INFO]: [EssentialsAntiBuild] Disabling EssentialsAntiBuild v2.17.2.0
+[02:00:10] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.17.2.0
+[02:00:10] [Server thread/INFO]: [EssentialsProtect] Disabling EssentialsProtect v2.17.2.0
+[02:00:10] [Server thread/INFO]: [Essentials] Disabling Essentials v2.17.2.0
+[02:00:10] [Server thread/INFO]: [Vault] [Vault][Economy] Essentials Economy unhooked.
+[02:00:10] [Server thread/INFO]: [dynmap] Disabling dynmap v3.0-beta-10-257
+[02:00:10] [Server thread/ERROR]: Error occurred while disabling dynmap v3.0-beta-10-257 (Is it up to date?)
+java.lang.NullPointerException: null
+	at org.dynmap.bukkit.DynmapPlugin.onDisable(DynmapPlugin.java:967) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:265) ~[spigot-1.16.3.jar:git-Spigot-988b411-1f4693a]
+	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoader.java:376) ~[spigot-1.16.3.jar:git-Spigot-988b411-1f4693a]
+	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:501) ~[spigot-1.16.3.jar:git-Spigot-988b411-1f4693a]
+	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:493) ~[spigot-1.16.3.jar:git-Spigot-988b411-1f4693a]
+	at org.bukkit.craftbukkit.v1_16_R2.CraftServer.disablePlugins(CraftServer.java:428) ~[spigot-1.16.3.jar:git-Spigot-988b411-1f4693a]
+	at net.minecraft.server.v1_16_R2.MinecraftServer.stop(MinecraftServer.java:715) ~[spigot-1.16.3.jar:git-Spigot-988b411-1f4693a]
+	at net.minecraft.server.v1_16_R2.DedicatedServer.stop(DedicatedServer.java:644) ~[spigot-1.16.3.jar:git-Spigot-988b411-1f4693a]
+	at net.minecraft.server.v1_16_R2.MinecraftServer.close(MinecraftServer.java:692) ~[spigot-1.16.3.jar:git-Spigot-988b411-1f4693a]
+	at org.spigotmc.RestartCommand.restart(RestartCommand.java:119) ~[spigot-1.16.3.jar:git-Spigot-988b411-1f4693a]
+	at org.spigotmc.RestartCommand.restart(RestartCommand.java:40) ~[spigot-1.16.3.jar:git-Spigot-988b411-1f4693a]
+	at org.spigotmc.RestartCommand$1.run(RestartCommand.java:31) ~[spigot-1.16.3.jar:git-Spigot-988b411-1f4693a]
+	at net.minecraft.server.v1_16_R2.MinecraftServer.b(MinecraftServer.java:1072) ~[spigot-1.16.3.jar:git-Spigot-988b411-1f4693a]
+	at net.minecraft.server.v1_16_R2.DedicatedServer.b(DedicatedServer.java:349) ~[spigot-1.16.3.jar:git-Spigot-988b411-1f4693a]
+	at net.minecraft.server.v1_16_R2.MinecraftServer.a(MinecraftServer.java:1007) ~[spigot-1.16.3.jar:git-Spigot-988b411-1f4693a]
+	at net.minecraft.server.v1_16_R2.MinecraftServer.w(MinecraftServer.java:846) ~[spigot-1.16.3.jar:git-Spigot-988b411-1f4693a]
+	at net.minecraft.server.v1_16_R2.MinecraftServer.lambda$0(MinecraftServer.java:164) ~[spigot-1.16.3.jar:git-Spigot-988b411-1f4693a]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_261]
+[02:00:10] [Server thread/INFO]: [Brewery] Disabling Brewery v2.1
+[02:00:10] [Server thread/INFO]: [0;32;22m[Brewery] [0;37;1mBrewery disabled![m
+[02:00:10] [Server thread/INFO]: [Multiverse-Core] Disabling Multiverse-Core v4.1.0-b775
+[02:00:10] [Server thread/INFO]: [Vault] Disabling Vault v1.7.2-b107
+[02:00:10] [Server thread/INFO]: WEPIF: GroupManager detected! Using GroupManager for permissions.
+[02:00:10] [Server thread/INFO]: [mcMMO] Disabling mcMMO v2.1.124
+[02:00:10] [Server thread/INFO]: [mcMMO] Saving mcMMOPlayers... (0)
+[02:00:10] [Server thread/INFO]: [mcMMO] Finished save operation for 0 players!
+[02:00:10] [Server thread/INFO]: [ArmorStandEditor] Disabling ArmorStandEditor v1.14-23
+[02:00:10] [Server thread/INFO]: [GroupManager] Disabling GroupManager v0.3.0
+[02:00:10] [Server thread/INFO]: WEPIF: GroupManager detected! Using GroupManager for permissions.
+[02:00:10] [Server thread/INFO]: GroupManager - INFO - Scheduled Data Saving is disabled!
+[02:00:10] [Server thread/INFO]: GroupManager version 0.3.0 is disabled!
+[02:00:10] [Server thread/INFO]: [OpenInv] Disabling OpenInv v4.0.8
+[02:00:10] [Server thread/INFO]: [AutoRestart] Disabling AutoRestart v4.1.4
+[02:00:10] [Server thread/INFO]: [0;32;1m[AutoRestart] Done[m
+[02:00:10] [Server thread/INFO]: [HealthBar] Disabling HealthBar v1.8.3
+[02:00:10] [Server thread/INFO]: HealthBar disabled, all the health bars have been removed.
+[02:00:10] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.1.0;8e55131
+[02:00:10] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[02:00:10] [Server thread/INFO]: [Itemizer] Disabling Itemizer v3.6
+[02:00:10] [Server thread/INFO]: Saving players
+[02:00:10] [Server thread/INFO]: Saving worlds
+[02:00:10] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Eastland]'/minecraft:overworld
+[02:00:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (Eastland): All chunks are saved
+[02:00:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Eastland_nether]'/minecraft:the_nether
+[02:00:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[02:00:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Eastland_the_end]'/minecraft:the_end
+[02:00:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[02:00:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Lobby_the_end]'/minecraft:lobby_the_end
+[02:00:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[02:00:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Haven]'/minecraft:haven
+[02:00:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (Haven): All chunks are saved
+[02:00:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Lobby]'/minecraft:lobby
+[02:00:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (Lobby): All chunks are saved
+[02:00:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Lobby_nether]'/minecraft:lobby_nether
+[02:00:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[02:00:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (Eastland): All chunks are saved
+[02:00:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[02:00:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[02:00:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[02:00:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (Haven): All chunks are saved
+[02:00:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (Lobby): All chunks are saved
+[02:00:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved

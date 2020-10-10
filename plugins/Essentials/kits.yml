@@ -1,0 +1,25 @@
+# EssentialsX kit configuration.
+# If you don't have any kits defined in this file, the plugin will try to copy them from the config.yml
+# 
+# Note: All items MUST be followed by a quantity!
+# All kit names should be lower case, and will be treated as lower in permissions/costs.
+# Syntax: - name[:durability] amount [enchantment:level]... [itemmeta:value]...
+# For Item Meta information visit http://wiki.ess3.net/wiki/Item_Meta
+# To make the kit execute a command, add /<command> to the items list. Use {PLAYER} to specify the player receiving the kit.
+# 'delay' refers to the cooldown between how often you can use each kit, measured in seconds.
+# Set delay to -1 for a one time kit.
+# For more information, visit http://wiki.ess3.net/wiki/Kits
+kits:
+  novice:
+    delay: 999999999999
+    items:
+    - stone_pickaxe 1 name:Pioche_d'initié lore:Outil_de_débutant,_de_mauvaise_qualité,_mais_toujours_utile_de_l'avoir.
+      dig_speed:1
+    - stone_shovel 1 name:Pelle_d'initié lore:Outil_de_débutant,_de_mauvaise_qualité,_mais_toujours_utile_de_l'avoir.
+      dig_speed:1
+    - stone_axe 1 name:Hache_d'initié lore:Outil_de_débutant,_de_mauvaise_qualité,_mais_toujours_utile_de_l'avoir.
+      dig_speed:1
+    - wooden_sword 1 name:Épée_d'entrainement lore:Épée_en_bois,_peu_létale_mais_utile_pour_se_défendre.
+      knockback:1
+    - leather_helmet 1 name:Chapeau_de_débutant lore:Un_chapeau_stylé_pour_les_nouveaux_arrivants.
+      color:1936030

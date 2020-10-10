@@ -1,0 +1,21 @@
+lastAccountName: Augurel
+timestamps:
+  login: 1587069493012
+  logout: 1587070884541
+ipAddress: 92.128.93.59
+lastlocation:
+  world: Eastland
+  x: 283.5
+  y: 62.0
+  z: -1334.5
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: Lobby
+  x: -12.153018490539083
+  y: 67.0
+  z: 12.307253660137272
+  yaw: 299.1629
+  pitch: 13.976565
+money: '2563.237000000000024158'
+afk: false

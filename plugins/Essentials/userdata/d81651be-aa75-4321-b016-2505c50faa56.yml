@@ -1,0 +1,22 @@
+lastlocation:
+  world: Lobby
+  x: 27.09901933772527
+  y: 69.1765176608307
+  z: -60.747309192244494
+  yaw: 170.40009
+  pitch: 8.699961
+logoutlocation:
+  world: Eastland
+  x: 317.30744727110454
+  y: 77.23986633332977
+  z: -1253.9925400823897
+  yaw: -108.08203
+  pitch: 21.149654
+timestamps:
+  logout: 1602258829676
+  login: 1602257359292
+  lastteleport: 1587500743471
+lastAccountName: 0Yama_
+ipAddress: 83.202.175.75
+afk: false
+money: '3138.5630000000001632'

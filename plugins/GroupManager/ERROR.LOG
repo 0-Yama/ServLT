@@ -1,0 +1,524 @@
+2020-04-13 22-12
+=============================== GM ERROR LOG ===============================
+= ERROR REPORT START - 0.3.0 =
+
+java.lang.IllegalArgumentException: The following file couldn't pass on Parser.
+plugins/GroupManager/worlds/eastland/groups.yml
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:590)
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:510)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.loadWorld(WorldsHolder.java:678)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.loadWorld(WorldsHolder.java:640)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.initialWorldLoading(WorldsHolder.java:110)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.initialLoad(WorldsHolder.java:100)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.resetWorldsHolder(WorldsHolder.java:92)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.<init>(WorldsHolder.java:59)
+	at org.anjocaido.groupmanager.GroupManager.onEnable(GroupManager.java:168)
+	at org.anjocaido.groupmanager.GroupManager.onEnable(GroupManager.java:92)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:351)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:480)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.enablePlugin(CraftServer.java:464)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.enablePlugins(CraftServer.java:378)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.reload(CraftServer.java:835)
+	at org.bukkit.Bukkit.reload(Bukkit.java:620)
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:27)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:149)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.dispatchCommand(CraftServer.java:723)
+	at net.minecraft.server.v1_15_R1.PlayerConnection.handleCommand(PlayerConnection.java:1658)
+	at net.minecraft.server.v1_15_R1.PlayerConnection.a(PlayerConnection.java:1498)
+	at net.minecraft.server.v1_15_R1.PacketPlayInChat.a(PacketPlayInChat.java:47)
+	at net.minecraft.server.v1_15_R1.PacketPlayInChat.a(PacketPlayInChat.java:1)
+	at net.minecraft.server.v1_15_R1.PlayerConnectionUtils.lambda$0(PlayerConnectionUtils.java:19)
+	at net.minecraft.server.v1_15_R1.TickTask.run(SourceFile:18)
+	at net.minecraft.server.v1_15_R1.IAsyncTaskHandler.executeTask(SourceFile:144)
+	at net.minecraft.server.v1_15_R1.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23)
+	at net.minecraft.server.v1_15_R1.IAsyncTaskHandler.executeNext(SourceFile:118)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.ba(MinecraftServer.java:918)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.executeNext(MinecraftServer.java:911)
+	at net.minecraft.server.v1_15_R1.IAsyncTaskHandler.awaitTasks(SourceFile:127)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.sleepForTick(MinecraftServer.java:895)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.run(MinecraftServer.java:828)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: while parsing a block mapping
+ in 'reader', line 13, column 3:
+      Nomade:
+      ^
+expected <block end>, but found '<block mapping start>'
+ in 'reader', line 17, column 5:
+        inheritance:
+        ^
+
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:572)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:217)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:230)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:218)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:141)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:468)
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:585)
+	... 34 more
+
+============================================================================
+
+2020-04-13 22-15
+=============================== GM ERROR LOG ===============================
+= ERROR REPORT START - 0.3.0 =
+
+java.lang.IllegalArgumentException: The following file couldn't pass on Parser.
+plugins/GroupManager/worlds/eastland/groups.yml
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:590)
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:510)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.loadWorld(WorldsHolder.java:678)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.loadWorld(WorldsHolder.java:640)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.initialWorldLoading(WorldsHolder.java:110)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.initialLoad(WorldsHolder.java:100)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.resetWorldsHolder(WorldsHolder.java:92)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.<init>(WorldsHolder.java:59)
+	at org.anjocaido.groupmanager.GroupManager.onEnable(GroupManager.java:168)
+	at org.anjocaido.groupmanager.GroupManager.onEnable(GroupManager.java:92)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:351)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:480)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.enablePlugin(CraftServer.java:464)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.enablePlugins(CraftServer.java:378)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.reload(CraftServer.java:835)
+	at org.bukkit.Bukkit.reload(Bukkit.java:620)
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:27)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:149)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.dispatchCommand(CraftServer.java:723)
+	at net.minecraft.server.v1_15_R1.PlayerConnection.handleCommand(PlayerConnection.java:1658)
+	at net.minecraft.server.v1_15_R1.PlayerConnection.a(PlayerConnection.java:1498)
+	at net.minecraft.server.v1_15_R1.PacketPlayInChat.a(PacketPlayInChat.java:47)
+	at net.minecraft.server.v1_15_R1.PacketPlayInChat.a(PacketPlayInChat.java:1)
+	at net.minecraft.server.v1_15_R1.PlayerConnectionUtils.lambda$0(PlayerConnectionUtils.java:19)
+	at net.minecraft.server.v1_15_R1.TickTask.run(SourceFile:18)
+	at net.minecraft.server.v1_15_R1.IAsyncTaskHandler.executeTask(SourceFile:144)
+	at net.minecraft.server.v1_15_R1.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23)
+	at net.minecraft.server.v1_15_R1.IAsyncTaskHandler.executeNext(SourceFile:118)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.ba(MinecraftServer.java:918)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.executeNext(MinecraftServer.java:911)
+	at net.minecraft.server.v1_15_R1.IAsyncTaskHandler.awaitTasks(SourceFile:127)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.sleepForTick(MinecraftServer.java:895)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.run(MinecraftServer.java:828)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: while parsing a block mapping
+ in 'reader', line 13, column 3:
+      Nomade:
+      ^
+expected <block end>, but found '<block mapping start>'
+ in 'reader', line 17, column 5:
+        inheritance:
+        ^
+
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:572)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:217)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:230)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:218)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:141)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:468)
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:585)
+	... 34 more
+
+============================================================================
+
+2020-04-13 22-25
+=============================== GM ERROR LOG ===============================
+= ERROR REPORT START - 0.3.0 =
+
+java.lang.IllegalArgumentException: The following file couldn't pass on Parser.
+plugins/GroupManager/worlds/eastland/groups.yml
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:590)
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:510)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.loadWorld(WorldsHolder.java:678)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.loadWorld(WorldsHolder.java:640)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.initialWorldLoading(WorldsHolder.java:110)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.initialLoad(WorldsHolder.java:100)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.resetWorldsHolder(WorldsHolder.java:92)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.<init>(WorldsHolder.java:59)
+	at org.anjocaido.groupmanager.GroupManager.onEnable(GroupManager.java:168)
+	at org.anjocaido.groupmanager.GroupManager.onEnable(GroupManager.java:92)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:351)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:480)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.enablePlugin(CraftServer.java:464)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.enablePlugins(CraftServer.java:378)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.reload(CraftServer.java:835)
+	at org.bukkit.Bukkit.reload(Bukkit.java:620)
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:27)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:149)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.dispatchCommand(CraftServer.java:723)
+	at net.minecraft.server.v1_15_R1.PlayerConnection.handleCommand(PlayerConnection.java:1658)
+	at net.minecraft.server.v1_15_R1.PlayerConnection.a(PlayerConnection.java:1498)
+	at net.minecraft.server.v1_15_R1.PacketPlayInChat.a(PacketPlayInChat.java:47)
+	at net.minecraft.server.v1_15_R1.PacketPlayInChat.a(PacketPlayInChat.java:1)
+	at net.minecraft.server.v1_15_R1.PlayerConnectionUtils.lambda$0(PlayerConnectionUtils.java:19)
+	at net.minecraft.server.v1_15_R1.TickTask.run(SourceFile:18)
+	at net.minecraft.server.v1_15_R1.IAsyncTaskHandler.executeTask(SourceFile:144)
+	at net.minecraft.server.v1_15_R1.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23)
+	at net.minecraft.server.v1_15_R1.IAsyncTaskHandler.executeNext(SourceFile:118)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.ba(MinecraftServer.java:918)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.executeNext(MinecraftServer.java:911)
+	at net.minecraft.server.v1_15_R1.IAsyncTaskHandler.awaitTasks(SourceFile:127)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.sleepForTick(MinecraftServer.java:895)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.run(MinecraftServer.java:828)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: mapping values are not allowed here
+ in 'reader', line 15, column 16:
+        permissions:
+                   ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:870)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:227)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:558)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:217)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:230)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:218)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:141)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:468)
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:585)
+	... 34 more
+
+============================================================================
+
+2020-04-14 11-10
+=============================== GM ERROR LOG ===============================
+= ERROR REPORT START - 0.3.0 =
+
+java.lang.IllegalArgumentException: The following file couldn't pass on Parser.
+plugins/GroupManager/worlds/eastland/groups.yml
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:590)
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:510)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.loadWorld(WorldsHolder.java:678)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.loadWorld(WorldsHolder.java:640)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.initialWorldLoading(WorldsHolder.java:110)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.initialLoad(WorldsHolder.java:100)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.resetWorldsHolder(WorldsHolder.java:92)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.<init>(WorldsHolder.java:59)
+	at org.anjocaido.groupmanager.GroupManager.onEnable(GroupManager.java:168)
+	at org.anjocaido.groupmanager.GroupManager.onEnable(GroupManager.java:92)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:351)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:480)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.enablePlugin(CraftServer.java:464)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.enablePlugins(CraftServer.java:378)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.a(MinecraftServer.java:457)
+	at net.minecraft.server.v1_15_R1.DedicatedServer.init(DedicatedServer.java:274)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.run(MinecraftServer.java:784)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: mapping values are not allowed here
+ in 'reader', line 15, column 16:
+        permissions:
+                   ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:870)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:227)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:558)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:217)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:230)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:218)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:141)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:468)
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:585)
+	... 18 more
+
+============================================================================
+
+2020-04-14 11-13
+=============================== GM ERROR LOG ===============================
+= ERROR REPORT START - 0.3.0 =
+
+java.lang.IllegalArgumentException: The following file couldn't pass on Parser.
+plugins/GroupManager/worlds/eastland/groups.yml
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:590)
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:510)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.loadWorld(WorldsHolder.java:678)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.loadWorld(WorldsHolder.java:640)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.initialWorldLoading(WorldsHolder.java:110)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.initialLoad(WorldsHolder.java:100)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.resetWorldsHolder(WorldsHolder.java:92)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.<init>(WorldsHolder.java:59)
+	at org.anjocaido.groupmanager.GroupManager.onEnable(GroupManager.java:168)
+	at org.anjocaido.groupmanager.GroupManager.onEnable(GroupManager.java:92)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:351)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:480)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.enablePlugin(CraftServer.java:464)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.enablePlugins(CraftServer.java:378)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.a(MinecraftServer.java:457)
+	at net.minecraft.server.v1_15_R1.DedicatedServer.init(DedicatedServer.java:274)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.run(MinecraftServer.java:784)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: mapping values are not allowed here
+ in 'reader', line 15, column 16:
+        permissions:
+                   ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:870)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:227)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:558)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:217)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:230)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:218)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:141)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:468)
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:585)
+	... 18 more
+
+============================================================================
+
+2020-04-14 11-14
+=============================== GM ERROR LOG ===============================
+= ERROR REPORT START - 0.3.0 =
+
+java.lang.IllegalArgumentException: The following file couldn't pass on Parser.
+plugins/GroupManager/worlds/eastland/groups.yml
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:590)
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:510)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.loadWorld(WorldsHolder.java:678)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.loadWorld(WorldsHolder.java:640)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.initialWorldLoading(WorldsHolder.java:110)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.initialLoad(WorldsHolder.java:100)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.resetWorldsHolder(WorldsHolder.java:92)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.<init>(WorldsHolder.java:59)
+	at org.anjocaido.groupmanager.GroupManager.onEnable(GroupManager.java:168)
+	at org.anjocaido.groupmanager.GroupManager.onEnable(GroupManager.java:92)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:351)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:480)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.enablePlugin(CraftServer.java:464)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.enablePlugins(CraftServer.java:378)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.reload(CraftServer.java:835)
+	at org.bukkit.Bukkit.reload(Bukkit.java:620)
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:27)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:149)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.dispatchCommand(CraftServer.java:723)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.dispatchServerCommand(CraftServer.java:708)
+	at net.minecraft.server.v1_15_R1.DedicatedServer.handleCommandQueue(DedicatedServer.java:443)
+	at net.minecraft.server.v1_15_R1.DedicatedServer.b(DedicatedServer.java:407)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.a(MinecraftServer.java:984)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.run(MinecraftServer.java:824)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: mapping values are not allowed here
+ in 'reader', line 15, column 16:
+        permissions:
+                   ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:870)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:227)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:558)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:217)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:230)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:218)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:141)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:468)
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:585)
+	... 25 more
+
+============================================================================
+
+2020-04-14 11-15
+=============================== GM ERROR LOG ===============================
+= ERROR REPORT START - 0.3.0 =
+
+java.lang.IllegalArgumentException: The following file couldn't pass on Parser.
+plugins/GroupManager/worlds/eastland/groups.yml
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:590)
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:510)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.loadWorld(WorldsHolder.java:678)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.loadWorld(WorldsHolder.java:640)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.initialWorldLoading(WorldsHolder.java:110)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.initialLoad(WorldsHolder.java:100)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.resetWorldsHolder(WorldsHolder.java:92)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.<init>(WorldsHolder.java:59)
+	at org.anjocaido.groupmanager.GroupManager.onEnable(GroupManager.java:168)
+	at org.anjocaido.groupmanager.GroupManager.onEnable(GroupManager.java:92)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:351)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:480)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.enablePlugin(CraftServer.java:464)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.enablePlugins(CraftServer.java:378)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.reload(CraftServer.java:835)
+	at org.bukkit.Bukkit.reload(Bukkit.java:620)
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:27)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:149)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.dispatchCommand(CraftServer.java:723)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.dispatchServerCommand(CraftServer.java:708)
+	at net.minecraft.server.v1_15_R1.DedicatedServer.handleCommandQueue(DedicatedServer.java:443)
+	at net.minecraft.server.v1_15_R1.DedicatedServer.b(DedicatedServer.java:407)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.a(MinecraftServer.java:984)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.run(MinecraftServer.java:824)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: mapping values are not allowed here
+ in 'reader', line 15, column 16:
+        permissions:
+                   ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:870)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:227)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:558)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:217)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:230)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:218)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:141)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:468)
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:585)
+	... 25 more
+
+============================================================================
+
+2020-04-14 11-16
+=============================== GM ERROR LOG ===============================
+= ERROR REPORT START - 0.3.0 =
+
+java.lang.IllegalArgumentException: The following file couldn't pass on Parser.
+plugins/GroupManager/worlds/eastland/groups.yml
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:590)
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:510)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.loadWorld(WorldsHolder.java:678)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.loadWorld(WorldsHolder.java:640)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.initialWorldLoading(WorldsHolder.java:110)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.initialLoad(WorldsHolder.java:100)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.resetWorldsHolder(WorldsHolder.java:92)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.<init>(WorldsHolder.java:59)
+	at org.anjocaido.groupmanager.GroupManager.onEnable(GroupManager.java:168)
+	at org.anjocaido.groupmanager.GroupManager.onEnable(GroupManager.java:92)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:351)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:480)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.enablePlugin(CraftServer.java:464)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.enablePlugins(CraftServer.java:378)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.reload(CraftServer.java:835)
+	at org.bukkit.Bukkit.reload(Bukkit.java:620)
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:27)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:149)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.dispatchCommand(CraftServer.java:723)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.dispatchServerCommand(CraftServer.java:708)
+	at net.minecraft.server.v1_15_R1.DedicatedServer.handleCommandQueue(DedicatedServer.java:443)
+	at net.minecraft.server.v1_15_R1.DedicatedServer.b(DedicatedServer.java:407)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.a(MinecraftServer.java:984)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.run(MinecraftServer.java:824)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: mapping values are not allowed here
+ in 'reader', line 15, column 16:
+        permissions:
+                   ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:870)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:227)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:558)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:217)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:230)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:218)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:108)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:141)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:525)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:468)
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:585)
+	... 25 more
+
+============================================================================
+
+2020-04-14 12-51
+=============================== GM ERROR LOG ===============================
+= ERROR REPORT START - 0.3.0 =
+
+java.lang.IllegalArgumentException: Invalid formatting found in 'inheritance' section for group: Nomade in file: plugins/GroupManager/worlds/eastland/groups.yml
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:786)
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:510)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.loadWorld(WorldsHolder.java:678)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.loadWorld(WorldsHolder.java:640)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.initialWorldLoading(WorldsHolder.java:110)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.initialLoad(WorldsHolder.java:100)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.resetWorldsHolder(WorldsHolder.java:92)
+	at org.anjocaido.groupmanager.dataholder.worlds.WorldsHolder.<init>(WorldsHolder.java:59)
+	at org.anjocaido.groupmanager.GroupManager.onEnable(GroupManager.java:168)
+	at org.anjocaido.groupmanager.GroupManager.onEnable(GroupManager.java:92)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:351)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:480)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.enablePlugin(CraftServer.java:464)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.enablePlugins(CraftServer.java:378)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.reload(CraftServer.java:835)
+	at org.bukkit.Bukkit.reload(Bukkit.java:620)
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:27)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:149)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.dispatchCommand(CraftServer.java:723)
+	at org.bukkit.craftbukkit.v1_15_R1.CraftServer.dispatchServerCommand(CraftServer.java:708)
+	at net.minecraft.server.v1_15_R1.DedicatedServer.handleCommandQueue(DedicatedServer.java:443)
+	at net.minecraft.server.v1_15_R1.DedicatedServer.b(DedicatedServer.java:407)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.a(MinecraftServer.java:984)
+	at net.minecraft.server.v1_15_R1.MinecraftServer.run(MinecraftServer.java:824)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to java.lang.String
+	at org.anjocaido.groupmanager.dataholder.WorldDataHolder.loadGroups(WorldDataHolder.java:778)
+	... 25 more
+
+============================================================================
+

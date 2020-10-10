@@ -1,0 +1,24 @@
+lastAccountName: Lt_Holden
+timestamps:
+  login: 1586897546231
+  kits:
+    débutant: 1586600295678
+  logout: 1586816731770
+  lastteleport: 1586732363042
+ipAddress: 77.135.20.13
+afk: false
+logoutlocation:
+  world: Eastland
+  x: 402.0846361616639
+  y: 77.0
+  z: -1363.7954450539005
+  yaw: 231.11804
+  pitch: 8.850002
+lastlocation:
+  world: Eastland
+  x: 339.69390812725726
+  y: 64.0
+  z: -1326.9976314660223
+  yaw: 28.516392
+  pitch: 1.9497501
+money: '22264.804450000000958200'

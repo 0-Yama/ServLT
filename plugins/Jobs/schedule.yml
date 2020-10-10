@@ -1,0 +1,71 @@
+# Enabled - with this false this schedule will be ignored
+# From and Until is in 24 hours format with : signs to separate minutes and seconds
+# Exp and Money determines how big is boost, to reset it. keep it at 1.0. so if you use 2.0 that means all money/exp is doubled
+# Days variables: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, All
+# Jobs can be any of your settup job or use All to give for all jobs at once
+# BroadcastOnStart or BroadcastOnStop - set it false to disable message when boost starts/stops
+# MessageOnStart or MessageOnStop - optional messages, if not given, then message from locale file will be shown
+# BroadcastInterval - how often in minutes to broadcast message about money/exp boost for jobs
+# BroadcastMessage - message to show every x minutes
+
+Boost:
+  NightBoost:
+    Enabled: false
+    From: '01:00:00'
+    Until: '6:00:00'
+    Exp: 1
+    Money: 1
+    Days:
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    Jobs:
+    - All
+    BroadcastOnStart: true
+    MessageOnStart:
+    - '&e***********************************************'
+    - '&e* Nerf Va-dormir actif ! Écus et XP x0.1 '
+    - '&e* Ne rester pas trop tard'    
+    - '&e***********************************************'
+    BroadcastOnStop: true
+    MessageOnStop:
+    - '&e***********************************************'
+    - '&e* Fin Nerf Va-dormir !'
+    - '&e* Il est déjà 8h00'
+    - '&e***********************************************'
+    BroadcastInterval: 15
+    BroadcastMessage:
+    - '&e******************************************************'
+    - "&e* Nerf Va-dormir actif jusqu'à [until]"
+    - '&e******************************************************'
+  ShortMoneyBoost:
+    Enabled: true
+    From: '00:00:00'
+    Until: '23:59:59'
+    Exp: 2.0
+    Money: 1.1
+    Days:
+    - Sunday
+    - Saturday
+    Jobs:
+    - All
+    BroadcastOnStart: true
+    MessageOnStart:
+    - '&e***********************************************'
+    - '&e* Boost Week-end activé +10% Écus et XP x2 !  *'
+    - "&e* Jusqu'à 20h00!                              *"    
+    - '&e***********************************************'
+    BroadcastOnStop: true
+    MessageOnStop:
+    - '&e***********************************************'
+    - '&e* Boost Week-end terminé                      *'
+    - '&e* Retour à la normale                         *'
+    - '&e***********************************************'
+    BroadcastInterval: 15
+    BroadcastMessage:
+    - '&e******************************************************'
+    - '&e* Boost Week-end activé +10% Écus et XP x2 !         *'
+    - "&e* Actif jusqu'à [until]                              *"
+    - '&e******************************************************'

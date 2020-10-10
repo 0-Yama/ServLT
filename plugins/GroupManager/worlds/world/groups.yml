@@ -1,0 +1,58 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+
+  Nomade:
+    default: true
+    permissions:
+    - -bukkit.command.kill
+    inheritance:
+    - g:niveau0
+    info:
+      prefix: '[&7Nomade&f] '
+      build: true
+      suffix: ''
+      
+  Membre:
+    default: false
+    permissions:
+    - -bukkit.command.kill
+    inheritance:
+     - Nomade
+     - g:niveau1
+    info:
+      prefix: '[&3Membre&f] '
+      build: true
+      suffix: ''
+
+  Confirmé:
+    default: false
+    permissions:
+    - -bukkit.command.kill
+    inheritance:
+     - Membre
+     - g:niveau2
+    info:
+      prefix: '[&9Confirmé&f] '
+      build: true
+      suffix: ''
+
+  Staff:
+    default: false
+    permissions:
+    - -bukkit.command.kill
+    inheritance:
+     - Confirmé
+     - g:niveau3
+    info:
+      prefix: '[&eStaff&f] '
+      build: true
+      suffix: ''

@@ -1,0 +1,31 @@
+lastAccountName: Vokkun
+timestamps:
+  login: 1586897479829
+  lastteleport: 1586799847655
+  logout: 1586901968250
+ipAddress: 176.158.217.210
+lastlocation:
+  world: Eastland_nether
+  x: -5.267211900272626
+  y: 47.0
+  z: -164.25598508705298
+  yaw: 272.4441
+  pitch: 11.250598
+afk: false
+homes:
+  home:
+    world: Eastland
+    x: 554.1242631347736
+    y: 94.0
+    z: -1278.2965149539514
+    yaw: -253.06583
+    pitch: 24.62372
+logoutlocation:
+  world: Eastland
+  x: 428.0644598892634
+  y: 62.9375
+  z: -1242.2103810412927
+  yaw: 180.7439
+  pitch: 14.099897
+money: '414.6977500000000273'
+nickname: l'Enchanteur
