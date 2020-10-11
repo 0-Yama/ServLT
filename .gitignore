@@ -10,4 +10,10 @@
 /Lobby_nether/*
 /Lobby_the_end/*
 
+*.dat
+*.dat_old
+*.mca
+server.properties
+*.zip
+
 /logs/*
