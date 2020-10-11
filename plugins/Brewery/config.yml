@@ -64,6 +64,7 @@ alwaysShowAlc: false
 openLargeBarrelEverywhere: true
 
 # How many Brewery drinks can be put into the Minecraft barrels [6]
+ageInMCBarrels: true
 maxBrewsInMCBarrels: 6
 
 # The used Ingredients and other brewing-data is saved to all Brewery Items. To prevent
@@ -86,7 +87,7 @@ autosave: 3
 debug: false
 
 # Config Version
-version: '2.1'
+version: '2.1.1'
 
 
 
@@ -142,6 +143,7 @@ customItems:
  #   Usable Colors: DARK_RED, RED, BRIGHT_RED, ORANGE, YELLOW, PINK, PURPLE, BLUE, CYAN, WATER, TEAL, OLIVE, GREEN, LIME, BLACK, GREY, BRIGHT_GREY, WHITE
  #   Or RGB colors (hex: for example '99FF33') (with '') (search for "HTML color" on the internet)
  # lore: List of additional text on the base potion. (Formatting codes possible: such as &6)
+ # customModelData: Custom Model Data Tag. This is a number that can be used to add custom textures to the item.
 
 cauldron:
   # Example with all possible entries
@@ -359,6 +361,8 @@ cauldron:
 # playercommands: List of Commands executed by the Player when drinking the brew
 # drinkmessage: Chat-message to the Player when drinking the Brew
 # drinktitle: Title on Screen to the Player when drinking the Brew
+# customModelData: Custom Model Data Tag. This is a number that can be used to add custom textures to the item.
+#   Can specify one for all, or one for each quality, separated by /
 # effects: List of effect/level/duration  Special potion-effect when drinking, duration in sek.
 #   Possible Effects: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
 #   Level or Duration ranges may be specified with a "-", ex. 'SPEED/1-2/30-40' = lvl 1 and 30 sec at worst and lvl 2 and 40 sec at best
@@ -858,6 +862,9 @@ multiServerDB:
 # If items in Offhand should be added to the cauldron as well [false]
 useOffhandForCauldron: false
 
+# If Barrel and Cauldron data can be loaded Async/in the Background [true]
+loadDataAsync: true
+
 
 # -- Chat Distortion Settings --
 
@@ -1155,3 +1162,4 @@ words:
    to: '*burp*'
    percentage: 6
    alcohol: 80
+# Il vous suffit d'ajouter quelque chose ici si vous voulez spécifier un nom ou une couleur pour la potion de base

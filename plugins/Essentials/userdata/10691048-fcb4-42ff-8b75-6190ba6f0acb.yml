@@ -1,6 +1,6 @@
 lastAccountName: Reepper
 timestamps:
-  login: 1587057849801
+  login: 1602431395434
   kits:
     kit: 1586593440323
     start: 1586594659341
@@ -9,7 +9,7 @@ timestamps:
     tools: 1586594217526
   lastteleport: 1587055160387
   logout: 1587058748449
-ipAddress: 176.145.50.166
+ipAddress: 127.0.0.1
 afk: false
 lastlocation:
   world: Lobby

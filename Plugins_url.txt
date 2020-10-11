@@ -22,6 +22,8 @@ https://dev.bukkit.org/projects/health-bar
 https://www.spigotmc.org/resources/itemizer.14733/
 
 ***J***
+-JOBS REBORN
+https://www.spigotmc.org/resources/jobs-reborn.4216/
 ***K***
 ***L***
 ***M***
