@@ -3,6 +3,8 @@
 https://www.spigotmc.org/resources/armor-stand-editor.7688/
 
 ***B***
+-BREWERY
+https://dev.bukkit.org/projects/brewery
 ***C***
 ***D***
 -DYNMAP
@@ -37,13 +39,8 @@ https://dev.bukkit.org/projects/openinv
 ***Q***
 ***R***
 ***S***
--SET-HOME
-https://dev.bukkit.org/projects/set-homes
-
 ***T***
-
 ***U***
-
 ***V***
 -VAULT
 https://dev.bukkit.org/projects/vault
