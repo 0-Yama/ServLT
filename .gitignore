@@ -13,7 +13,9 @@
 *.dat
 *.dat_old
 *.mca
-server.properties
 *.zip
+server.properties
 
 /logs/*
+
+
