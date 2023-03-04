@@ -1,8 +1,6 @@
-lastAccountName: CrottindesIles
 timestamps:
   login: 1586902017441
   logout: 1586907270846
-ipAddress: 81.51.148.191
 logoutlocation:
   world: Eastland
   x: 389.6694228467576
@@ -12,3 +10,5 @@ logoutlocation:
   pitch: 19.95036
 afk: false
 money: '6551.65439999999995423'
+ip-address: 81.51.148.191
+last-account-name: CrottindesIles

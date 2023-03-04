@@ -1,6 +1,5 @@
-config-version: 3
-notify:
-  any-chest: true
-  silent-chest: true
+config-version: 5
 settings:
   disable-saving: false
+  locale: en_US
+  disable-offline-access: false

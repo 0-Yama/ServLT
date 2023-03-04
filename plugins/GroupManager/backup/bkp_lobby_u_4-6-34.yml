@@ -1,0 +1,16 @@
+users:
+  ElgarL:
+    group: Nomade
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  KHobbits:
+    group: Nomade
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  snowleo:
+    group: Nomade
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms

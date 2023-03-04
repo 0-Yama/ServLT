@@ -1,8 +1,6 @@
-lastAccountName: Augurel
 timestamps:
   login: 1587069493012
   logout: 1587070884541
-ipAddress: 92.128.93.59
 lastlocation:
   world: Eastland
   x: 283.5
@@ -19,3 +17,5 @@ logoutlocation:
   pitch: 13.976565
 money: '2563.237000000000024158'
 afk: false
+ip-address: 92.128.93.59
+last-account-name: Augurel

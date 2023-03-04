@@ -1,9 +1,7 @@
-lastAccountName: Sire_DocDiablo
 timestamps:
   login: 1587498958029
   logout: 1587501249539
   lastteleport: 1587499568123
-ipAddress: 185.228.230.37
 afk: false
 logoutlocation:
   world: Eastland
@@ -20,3 +18,5 @@ lastlocation:
   yaw: -170.84966
   pitch: 1.9500066
 money: '1335.725000000000111'
+ip-address: 185.228.230.37
+last-account-name: Sire_DocDiablo

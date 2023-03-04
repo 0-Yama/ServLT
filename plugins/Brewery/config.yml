@@ -38,6 +38,12 @@ pukeItem: Soul_Sand
 # If the item despawn time was changed in the spigot.yml, the pukeDespawntime changes as well.
 pukeDespawntime: 60
 
+# How much the Player stumbles depending on the amount of alcohol he drank. Can be set to 0 and higher than 100 [100]
+stumblePercent: 100
+
+# Display his drunkeness to the player when he drinks a brew or eats a drainItem [true]
+showStatusOnDrink: true
+
 # Consumable Item/strength. Decreases the alcohol level by <strength> when consumed. (list)
 drainItems:
   - Bread/4
@@ -45,6 +51,10 @@ drainItems:
 
 # Time (in days) that drunkeness-data stays in memory after a player goes offline, to apply hangover etc. [7]
 hangoverDays: 7
+
+# Show Particles over Cauldrons when they have ingredients and a heat source. [true]
+# The changing color of the particles can help with timing some recipes
+enableCauldronParticles: true
 
 # If crafting and using of the Brew Sealing Table is enabled (2 Bottles over 4 Planks) [true, true]
 craftSealingTable: true
@@ -64,6 +74,7 @@ alwaysShowAlc: false
 openLargeBarrelEverywhere: true
 
 # How many Brewery drinks can be put into the Minecraft barrels [6]
+ageInMCBarrels: true
 maxBrewsInMCBarrels: 6
 
 # The used Ingredients and other brewing-data is saved to all Brewery Items. To prevent
@@ -86,7 +97,7 @@ autosave: 3
 debug: false
 
 # Config Version
-version: '2.1'
+version: '3.1'
 
 
 
@@ -141,12 +152,22 @@ customItems:
  # color: Color of the potion from a cauldron. Defaults to CYAN
  #   Usable Colors: DARK_RED, RED, BRIGHT_RED, ORANGE, YELLOW, PINK, PURPLE, BLUE, CYAN, WATER, TEAL, OLIVE, GREEN, LIME, BLACK, GREY, BRIGHT_GREY, WHITE
  #   Or RGB colors (hex: for example '99FF33') (with '') (search for "HTML color" on the internet)
+ # cookParticles:
+ #   Color of the Particles above the cauldron at different cooking-times
+ #   Color and minute during which each color should appear, i.e. one color at 8 minutes fading to another at 18 minutes.
+ #   As List, each Color as name or RGB, see above. Written as 'Color/Minute'
+ #   It will fade to the last color in the end, if there is only one color in the list, it will fade to grey
  # lore: List of additional text on the base potion. (Formatting codes possible: such as &6)
+ # customModelData: Custom Model Data Tag. This is a number that can be used to add custom textures to the item.
 
 cauldron:
   # Example with all possible entries
   ex:
     name: Example
+    cookParticles:
+      - 'RED/5'
+      - 'WHITE/10'
+      - '800000/25' # maroon
     ingredients:
       - Bedrock/2
       - Diamond
@@ -165,15 +186,23 @@ cauldron:
   wheat:
     name: Fermented wheat
     ingredients: Wheat
+    cookParticles:
+      - '2d8686/8' # Dark Aqua
 
   sugarcane:
     name: Sugar brew
     ingredients: Sugar_Cane
     color: 'f1ffad' # yellowish green
+    cookParticles:
+      - 'f1ffad/4'
+      - '858547/10' # dark olive
 
   sugar:
     name: Sugarwater
     ingredients: Sugar
+    cookParticles:
+      - 'WHITE/4'
+      - 'BRIGHT_GREY/25'
 
   apple:
     name: Apple must
@@ -183,6 +212,10 @@ cauldron:
     name: Grape must
     ingredients: Sweet_Berries
     color: RED
+    cookParticles:
+      - 'ff6666/2' # bright red
+      - 'RED/7'
+      - 'ac6553/13' # brown-red
 
   potato:
     name: Potatomash
@@ -192,36 +225,54 @@ cauldron:
     name: Boiled herbs
     ingredients: Grass
     color: '99ff66' # bright green
+    cookParticles:
+      - 'GREEN/2'
+      - '99ff99/20' # faded green
 
   rmushroom:
     name: Mushroom brew
     ingredients: Red_Mushroom
     color: 'ff5c33' # amber red
+    cookParticles:
+      - 'fab09e/15' # faded red
 
   bmushroom:
     name: Mushroom brew
     ingredients: Brown_Mushroom
     color: 'c68c53' # brighter brown
+    cookParticles:
+      - 'c68c53/15'
 
   cocoa:
     name: Chocolately brew
     ingredients: Cocoa_Beans
     color: '804600' # mocca
+    cookParticles:
+      - 'a26011/1'
+      - '5c370a/3'
+      - '4d4133/8' # Gray-brown
 
   milk:
     name: Milky water
     ingredients: Milk_Bucket
     color: BRIGHT_GREY
+    cookParticles:
+      - 'fbfbd0/1' # yellow-white
+      - 'WHITE/6'
 
   bl_flow:
     name: Blueish brew
     ingredients: blue-flowers
     color: '0099ff' # sky blue
+    cookParticles:
+      - '0099ff'
 
   cactus:
     name: Agave brew
     ingredients: cactus
     color: '00b300' # cactus green
+    cookParticles:
+      - '00b300/16'
 
   poi_potato:
     name: Poisonous Broth
@@ -240,11 +291,17 @@ cauldron:
     name: Boiled herbs
     ingredients: vine
     color: '99ff66' # bright green
+    cookParticles:
+      - 'GREEN/2'
+      - '99ff99/20' # faded green
 
   rot_flesh:
     name: Foul pest
     ingredients: Rotten_Flesh
     color: '263300' # brown green
+    cookParticles:
+      - '263300/8'
+      - 'BLACK/20'
 
   melon:
     name: Melon juice
@@ -271,6 +328,10 @@ cauldron:
     name: Chocolately sap
     ingredients: Cookie
     color: '804600' # mocca
+    cookParticles:
+      - 'a26011/1'
+      - '5c370a/3'
+      - '4d4133/8' # Gray-brown
 
   fer_spid_eye:
     name: Fermented Eye
@@ -288,15 +349,22 @@ cauldron:
     name: Glistering brew
     ingredients: Gold_Nugget
     color: 'ffd11a' # gold
+    cookParticles:
+      - 'ffd11a'
 
   glowstone_dust:
     name: Glowing brew
     ingredients: Glowstone_Dust
     color: 'ffff33' # bright yellow
+    cookParticles:
+      - 'ffff99/3'
+      - 'd9d926/15' # faded yellow
 
   # -- Multiple Ingredients: --
   applemead_base:
     name: Apple-Sugar brew
+    cookParticles:
+      - 'e1ff4d/4'
     ingredients:
       - Sugar_Cane/3
       - Apple
@@ -304,6 +372,9 @@ cauldron:
 
   poi_grass:
     name: Boiled acidy herbs
+    cookParticles:
+      - 'GREEN/2'
+      - '99ff99/20' # faded green
     ingredients:
       - Grass
       - Poisonous_Potato
@@ -311,6 +382,8 @@ cauldron:
 
   juniper:
     name: Juniper brew
+    cookParticles:
+      - '00ccff/8'
     ingredients:
       - blue-flowers
       - wheat
@@ -318,6 +391,8 @@ cauldron:
 
   gin_base:
     name: Fruity juniper brew
+    cookParticles:
+      - 'c68c53/15'
     ingredients:
       - blue-flowers
       - wheat
@@ -326,6 +401,8 @@ cauldron:
 
   eggnog_base:
     name: Smooth egg mixture
+    cookParticles:
+      - 'ffecb3/2'
     ingredients:
       - egg
       - sugar
@@ -345,7 +422,7 @@ cauldron:
 # cookingtime: Time in real minutes ingredients have to boil
 # distillruns: How often it has to be distilled for full alcohol (0=without distilling)
 # distilltime: How long (in seconds) one distill-run takes (0=Default time of 40 sec) MC Default would be 20 sec
-# wood: Wood of the barrel 0=any 1=Birch 2=Oak 3=Jungle 4=Spruce 5=Acacia 6=Dark Oak
+# wood: Wood of the barrel 0=any 1=Birch 2=Oak 3=Jungle 4=Spruce 5=Acacia 6=Dark Oak 7=Crimson 8=Warped
 #   The Minecraft barrel is made of oak
 # age: Time in Minecraft-days, the potion has to age in a barrel 0=no aging
 # color: Color of the potion after distilling/aging.
@@ -357,8 +434,11 @@ cauldron:
 #   Specific lore for quality possible, using + bad, ++ normal, +++ good, added to the front of the line.
 # servercommands: List of Commands executed by the Server when drinking the brew
 # playercommands: List of Commands executed by the Player when drinking the brew
+#   Specific Commands for quality possible, using + bad, ++ normal, +++ good, added to the front of the line.
 # drinkmessage: Chat-message to the Player when drinking the Brew
 # drinktitle: Title on Screen to the Player when drinking the Brew
+# customModelData: Custom Model Data Tag. This is a number that can be used to add custom textures to the item.
+#   Can specify one for all, or one for each quality, separated by /
 # effects: List of effect/level/duration  Special potion-effect when drinking, duration in sek.
 #   Possible Effects: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
 #   Level or Duration ranges may be specified with a "-", ex. 'SPEED/1-2/30-40' = lvl 1 and 30 sec at worst and lvl 2 and 40 sec at best
@@ -828,10 +908,19 @@ recipes:
 # -- Plugin Compatibility --
 
 # Enable checking of other Plugins (if installed) for Barrel Permissions [true]
+# Plugins 'Landlord' and 'Protection Stones' use the WorldGuard Flag. 'ClaimChunk' is natively supported.
 useWorldGuard: true
 useLWC: true
 useGriefPrevention: true
+useTowny: true
+useBlockLocker: true
 useGMInventories: true
+
+# Use a virtual chest when opening a Barrel to check with all other protection plugins
+# This could confuse Anti-Cheat plugins, but is otherwise good to use
+# use this for 'Residence' Plugin and any others that don't check all cases in the PlayerInteractEvent
+useVirtualChestPerms: false
+
 
 # Enable the Logging of Barrel Inventories to LogBlock [true]
 useLogBlock: true
@@ -857,6 +946,15 @@ multiServerDB:
 
 # If items in Offhand should be added to the cauldron as well [false]
 useOffhandForCauldron: false
+
+# If Barrel and Cauldron data can be loaded Async/in the Background [true]
+loadDataAsync: true
+
+# If Cauldron Particles should be reduced to the bare minimum [false]
+minimalParticles: false
+
+# Allow emptying brews into hoppers to discard brews while keeping the glass bottle [true]
+brewHopperDump: true
 
 
 # -- Chat Distortion Settings --
@@ -1155,3 +1253,4 @@ words:
    to: '*burp*'
    percentage: 6
    alcohol: 80
+# Il vous suffit d'ajouter quelque chose ici si vous voulez spécifier un nom ou une couleur pour la potion de base

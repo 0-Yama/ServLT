@@ -1,9 +1,7 @@
-lastAccountName: PetitKiwiBleu
 timestamps:
   login: 1586722014180
   logout: 1586722573820
   lastteleport: 1586694723391
-ipAddress: 109.219.226.66
 logoutlocation:
   world: Eastland
   x: 432.01358868611385
@@ -20,3 +18,5 @@ lastlocation:
   pitch: 11.700054
 afk: false
 money: '17.655000000000001'
+ip-address: 109.219.226.66
+last-account-name: PetitKiwiBleu

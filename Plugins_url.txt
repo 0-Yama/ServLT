@@ -1,30 +1,42 @@
 ***A***
 -ARMOR STAND EDITOR
-https://www.spigotmc.org/resources/armor-stand-editor.7688/
+https://www.spigotmc.org/resources/armor-stand-editor.7688/ [DEAD]
+
+-ULTIMATE_AUTO_RESTART
+https://www.spigotmc.org/resources/1-8-1-19-3-ultimateautorestart-need-an-autorestart-plugin-grab-the-best-one-today.64414/
 
 ***B***
+-BREWERY
+https://dev.bukkit.org/projects/brewery
 ***C***
 ***D***
 -DYNMAP
 https://dev.bukkit.org/projects/dynmap
 
 ***E***
+- ESSENTIALSX Suite
+https://essentialsx.net/downloads.html?branch=stable
 ***F***
 ***G***
+- GROUP_MANAGER
+https://github.com/ElgarL/GroupManager/releases
 ***H***
--HEALTH BAR
-https://dev.bukkit.org/projects/health-bar
+-HEALTH BAR [1.18.2]
+https://www.spigotmc.org/resources/healthbar-players-and-mobs-1-8-1-18-2.92041/reviews
 
 ***I***
 -ITEMIZER
-https://www.spigotmc.org/resources/itemizer.14733/
+https://www.spigotmc.org/resources/itemizer.14733/ [1.17]
 
 ***J***
+- JOBS REBORN
+https://www.spigotmc.org/resources/jobs-reborn.4216/
 ***K***
 ***L***
 ***M***
 -MCMMO
 https://dev.bukkit.org/projects/mcmmo
+https://popicraft.net/jenkins/job/mcMMO/
 
 -MULTIVERSE-CORE
 https://dev.bukkit.org/projects/multiverse-core

@@ -1,9 +1,7 @@
-lastAccountName: Vokkun
 timestamps:
   login: 1586897479829
   lastteleport: 1586799847655
   logout: 1586901968250
-ipAddress: 176.158.217.210
 lastlocation:
   world: Eastland_nether
   x: -5.267211900272626
@@ -29,3 +27,5 @@ logoutlocation:
   pitch: 14.099897
 money: '414.6977500000000273'
 nickname: l'Enchanteur
+ip-address: 176.158.217.210
+last-account-name: Vokkun

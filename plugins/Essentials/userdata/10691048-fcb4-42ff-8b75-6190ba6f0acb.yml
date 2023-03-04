@@ -1,30 +1,22 @@
-lastAccountName: Reepper
+teleportenabled: true
+teleportauto: false
+godmode: true
+muted: false
+jailed: false
+ip-address: 192.168.1.254
+afk: true
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
 timestamps:
-  login: 1587057849801
-  kits:
-    kit: 1586593440323
-    start: 1586594659341
-    débutant: 1586647914141
-    dtools: 1586593449781
-    tools: 1586594217526
-  lastteleport: 1587055160387
-  logout: 1587058748449
-ipAddress: 176.145.50.166
-afk: false
-lastlocation:
-  world: Lobby
-  x: 26.880820294408743
-  y: 68.5
-  z: -61.01897916469598
-  yaw: 170.33908
-  pitch: -8.872834
-logoutlocation:
-  world: Lobby
-  x: 22.305618562402504
-  y: 68.0
-  z: -53.573273372579706
-  yaw: 12.48819
-  pitch: 19.519966
-money: '34.3640000000000025'
-nickname: Björn
-godmode: false
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 0
+  login: 1677951220388
+money: '200'
+last-account-name: Reepper
